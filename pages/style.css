@@ -1,0 +1,264 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, ul, p {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-color: #F5F5F5;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.header  {
+	background-color: #002A7B;
+	border: 1px solid black;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.headerTitleLink {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #F7F7F7;
+}
+
+.headerImgLogo{
+	padding: 5px;
+	height: 100px;
+	width: 100px;
+}
+/*секция main*/
+
+.wrapperMain{
+	display: flex;
+}
+
+.headerMain{
+	padding: 20px 0;
+}
+
+.listBook{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 130px;
+	list-style: none;
+
+}
+/*карзина*/
+
+.cartBook{
+	min-width: 255px;
+	margin-top: 70px;
+	padding: 30px 50px 30px 20px;
+	background-color: #ffffff;
+	border-radius: 20px;
+}
+/*body cart*/
+.cartContainer {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.confirmContainer {
+	padding-top: 20px;
+}
+
+.confirmButton{
+	font-family: 'Georgia', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 22.1px;
+	letter-spacing: 0.06em;
+	border-radius: 9px;
+	cursor: pointer;
+	background: #faa01b;
+	color: #000000;
+	padding: 10px 30px;
+	border: none;
+	text-decoration: none;
+	margin: 28px;
+
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.bookListItem {
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 20px;
+	cursor: move;
+}
+.bookListImg{
+	width: 200px;
+	max-height: 300px;
+}
+.bookListTitle{
+	max-width: 150px;
+	font-size: 16px;
+}
+.bookListSubtitle{
+	padding-top: 10px;
+	color: #828282;
+	max-width: 150px;
+	font-size: 14px;
+}
+.addToCart{
+	font-family: 'Georgia', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 22.1px;
+	letter-spacing: 0.06em;
+	border-radius: 9px;
+	cursor: pointer;
+	background: #faa01b;
+	color: #000000;
+	padding: 5px 10px 5px 10px;
+	border: none;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	
+	
+
+}
+ .bookInfo {
+	 font-family: 'Georgia', sans-serif;
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 17px;
+	 line-height: 22.1px;
+	 letter-spacing: 0.06em;
+	 border-radius: 9px;
+	 cursor: pointer;
+	 background: #D3D3D3;
+	 color: #000000;
+	 padding: 5px 10px 5px 10px;
+	 border: none;
+	 margin-bottom: 15px;
+	 margin-left: 5px;
+ }
+
+
+
+ .blockHidden{
+	 position: absolute;
+	 height: 100%;
+	 width: 100%;
+	 background-color: rgba(130, 130, 130, 0.8);
+	 z-index: 10;
+ }
+
+ .infoAboutBook{
+	 padding: 5px 0 15px 15px;
+ }
+
+
+.blockButton {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pop-up{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(130, 130, 130, 0.8);
+    z-index: 1000;
+}
+.pop-up-content {
+	position: relative;
+    display: flex;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+.popUpClose{
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.materialIcons {
+	font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    
+}
+
+.bookDescription{
+	max-width: 200px;
+    padding-top: 10px;
+}
+
+.bookInfoBlock {
+	padding-left: 30px;
+}
+
+.footerTitle {
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22.1px;
+	margin: 10px 0px 10px 0px;
+	
+}
+
+.footer {
+	background-color: #002A7B;
+	border: 1px solid black;
+	margin-top: 30px;
+}
+
+.bookCardCart{
+	position: relative;
+	padding: 10px 40px 10px 10px;
+	border: 1px solid #faa01b;
+	border-radius: 20px;
+}
+
+.bookDragging{
+	opacity: 0.5;
+}
