@@ -1,0 +1,86 @@
+.form {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.blockDelivery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.deliveryData {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.Date {
+    display:block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: .8rem 0;
+    font-weight: bold;
+}
+.inputBox {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #faa01b;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline:none;
+}
+
+.submitFormBtn:disabled{
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.submitFormBtn {
+    margin-top: 20px;
+    background-color: #faa01b;
+    color: #ffffff;
+    padding: 10px 50px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.chooseGifts {
+    margin: 0.8rem 0;
+    font-size: 20px;
+}
+
+.invalid {
+    position: relative;
+}
+
+.valid {
+    position: relative;
+}
+
+.invalid:before {
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: 300px;
+    width: 18px;
+    height: 18px;
+    background: url(../assets/images/invalid.png);
+    background-size: cover;
+}
+
+.valid:before{
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: 300px;
+    width: 18px;
+    height: 18px;
+    background: url(../assets/images/valid.png);
+    background-size: cover;
+}

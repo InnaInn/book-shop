@@ -66,7 +66,7 @@ const  headerTitleLink = document.createElement('a');
 headerTitleLink.classList.add('headerTitleLink');
 headerTitle.prepend(headerTitleLink);
 headerTitleLink.setAttribute('href', '#');
-headerTitleLink.innerHTML="Book shop";
+headerTitleLink.innerHTML="BookShop";
 /*картинка в лого*/
 const headerImgLogo = document.createElement('img');
 headerImgLogo.classList.add('headerImgLogo');
@@ -342,12 +342,25 @@ function renderCart() {
         addBook.setAttribute('data-counter', 1);
         cartContainer.prepend(addBook);
 
-        addBook.innerHTML = `
-        <h3 class ="bookListTitle">${book.title}</h3>
-        <h4 class="bookListSubtitle">${book.author}</h4>
-        <p class="bookListPrice">Price: ${book.price}$</p>
-        <div class="bookQuantity">Quantity: ${cartContent[bookId]}</div>
-        `
+
+        const bookListTitle = document.createElement('h3');
+        bookListTitle.classList.add('bookListTitle');
+        bookListTitle.innerText = book.title;
+        addBook.append(bookListTitle);
+
+        const bookListSubtitle = document.createElement('h4');
+        bookListSubtitle.classList.add('bookListSubtitle');
+        bookListSubtitle.innerText = book.author;
+        addBook.append(bookListSubtitle);
+
+        const bookListPrice = document.createElement('p');
+        bookListPrice.classList.add('bookListPrice');
+        bookListPrice.innerText = `Price: ${book.price}$`;
+        addBook.append(bookListPrice);
+
+        const bookQuantity = document.createElement('div');
+        bookQuantity.classList.add('bookQuantity');
+        bookQuantity.innerText = `Quantity: ${cartContent[bookId]}`;
 
         const cardClose = document.createElement('button');
         cardClose.classList.add('popUpClose');
