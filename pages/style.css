@@ -21,7 +21,7 @@ body {
 	border: 1px solid black;
 }
 
-.container{
+.container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -250,6 +250,7 @@ body {
 	background-color: #002A7B;
 	border: 1px solid black;
 	margin-top: 30px;
+
 }
 
 .bookCardCart{
@@ -261,6 +262,17 @@ body {
 
 .bookDragging{
 	opacity: 0.5;
+}
+
+.result-text {
+	font-size: 20px;
+	line-height: 3.5;
+}
+
+.result-text, .headerResults {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
 }
 
 

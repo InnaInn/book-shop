@@ -45,7 +45,7 @@ const deliveryInputsCheck = function (ev) {
             regex = /^[1-9]+[0-9-]*$/;
             break;
     }
-    if (ev.target.classList.contains('inputBox')) {
+    if (regex != null && ev.target.classList.contains('inputBox')) {
         if (regex.test(ev.target.value)) {
             ev.target.parentElement.classList.add('valid');
             ev.target.parentElement.classList.remove('invalid');
@@ -69,11 +69,7 @@ document.getElementById("deliveryDate").addEventListener("click", deliveryInputs
 document.querySelectorAll(".radio").forEach(input => {
     input.addEventListener('click', deliveryInputsCheck)
 });
-/*
- document.querySelectorAll(".gift").forEach(el => {
-     el.addEventListener('click', checkBoxCount)
- });
-*/
+
 let dtToday = new Date();
 
 let month = dtToday.getMonth() + 1;
@@ -85,3 +81,26 @@ if(day < 10)
     day = '0' + day.toString();
 let maxDate = year + '-' + month + '-' + day;
 document.getElementById("deliveryDate").setAttribute("min", maxDate)
+
+const checkBoxCount = function () {
+    let giftCheckBoxes = document.querySelectorAll('.gift');
+    const checkInput = Array.from(giftCheckBoxes).filter(input => input.checked === true).length;
+
+    if (checkInput === 2) {
+        for (let input of giftCheckBoxes) {
+            if (!input.checked) {
+                input.disabled = true;
+            }
+        }
+    } else {
+        for (let input of giftCheckBoxes) {
+            if(input.disabled){
+                input.disabled = false
+            }
+        }
+    }
+};
+
+document.querySelectorAll(".gift").forEach(el => {
+    el.addEventListener('click', checkBoxCount)
+});
