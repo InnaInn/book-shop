@@ -14,7 +14,7 @@ blockResults.innerHTML = `
             Street: ${params.get("street")}; <br>
             House number: ${params.get("houseNumber")}; <br>
             Flat number: ${params.get("flatNumber")}; <br>
-            Delivery date: ${params.get("deliveryDate")}. <br>
+            Delivery date: ${params.get("deliveryDate")}. 
          
            
 `

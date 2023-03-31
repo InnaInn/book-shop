@@ -361,6 +361,7 @@ function renderCart() {
         const bookQuantity = document.createElement('div');
         bookQuantity.classList.add('bookQuantity');
         bookQuantity.innerText = `Quantity: ${cartContent[bookId]}`;
+        addBook.append(bookQuantity);
 
         const cardClose = document.createElement('button');
         cardClose.classList.add('popUpClose');

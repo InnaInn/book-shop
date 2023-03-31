@@ -30,13 +30,13 @@ const deliveryInputsCheck = function (ev) {
     let regex;
     switch (ev.target.id) {
         case 'name':
-            regex = /[a-zA-Z]{4,}$/;
+            regex = /^[a-zA-Z]{4,}$/;
             break;
         case 'surname':
-            regex = /[a-zA-Z]{5,}$/;
+            regex = /^[a-zA-Z]{5,}$/;
             break;
         case 'street':
-            regex= /[a-zA-Z 0-9]+/;
+            regex= /^[a-zA-Z 0-9]+/;
             break;
         case 'houseNumber':
             regex = /^[1-9]+[0-9]*$/;
