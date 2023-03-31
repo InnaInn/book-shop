@@ -51,7 +51,7 @@ popUpCloseBtn.addEventListener('click', () => {
  /*header*/
 const headerElement  = document.createElement('header');
 headerElement.classList.add('header');
-popUpElement.after(headerElement);
+fragment.appendChild(headerElement);
 /*первый div  в header*/
 const headerContainer = document.createElement('div');
 headerContainer.classList.add('container');
@@ -77,7 +77,9 @@ headerImgLogo.setAttribute('alt', 'logo')
 
 const  mainElement = document.createElement('main');
 mainElement.classList.add('main')
-headerElement.after(mainElement);
+fragment.appendChild(mainElement);
+
+bodyElement.appendChild(fragment);
 
 /* первый div в блоке*/
 

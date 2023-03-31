@@ -25,24 +25,29 @@
         <form id="fromUser" action="results.html" method="get">
             <h2 class="headerMain">Information for delivery</h2>
             <div class="blockInput">
-            <p class="Date">Name:</p>
-            <input type="text" id="name" name='name' class="inputBox" required/>
+                <p class="Date">Name:</p>
+                <input type="text" id="name" name='name' class="inputBox" required/>
+                <div class="validationError">Your name should be 4-15 characters long. No spaces</div>
             </div>
             <div class="blockInput">
-            <p class="Date">Surname:</p>
-            <input type="text" id="surname" name='surname' class="inputBox" required/>
+                <p class="Date">Surname:</p>
+                <input type="text" id="surname" name='surname' class="inputBox" required/>
+                <div class="validationError">Your surname should be 5-20 characters long. No spaces</div>
             </div>
             <div class="blockInput">
                 <p class="Date">Street:</p>
                 <input type="text" id="street" name='street' class="inputBox" required/>
+                <div class="validationError">Your street should be 5 - 25 characters long </div>
             </div>
             <div class="blockInput">
-            <p class="Date">House number:</p>
-            <input type="text" id="houseNumber" name='houseNumber' class="inputBox" min="1" required/>
+                <p class="Date">House number:</p>
+                <input type="text" id="houseNumber" name='houseNumber' class="inputBox" min="1" required/>
+                <div class="validationError">Your house number should be 1 - 10 characters long </div>
             </div>
             <div class="blockInput">
-            <p class="Date">Flat number:</p>
-            <input type="text" id="flatNumber" name='flatNumber' class="inputBox" min="1" required/>
+                <p class="Date">Flat number:</p>
+                <input type="text" id="flatNumber" name='flatNumber' class="inputBox" min="1" required/>
+                <div class="validationError">Your flat, numbers or numbers followed by a dash, 1-5 characters long </div>
             </div>
             <p class="Date">Delivery date:</p>
             <input type="date" id="deliveryDate" class="inputBox" name='deliveryDate' required>

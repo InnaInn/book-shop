@@ -104,3 +104,4 @@ const checkBoxCount = function () {
 document.querySelectorAll(".gift").forEach(el => {
     el.addEventListener('click', checkBoxCount)
 });
+

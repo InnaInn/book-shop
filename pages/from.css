@@ -67,18 +67,27 @@
     content: '';
     position: absolute;
     top: 48px;
-    left: 300px;
+    left: 435px;
     width: 18px;
     height: 18px;
     background: url(../assets/images/invalid.png);
     background-size: cover;
 }
 
+.validationError {
+    visibility: hidden;
+    color: red;
+}
+
+.invalid .validationError {
+    visibility: visible;
+}
+
 .valid:before{
     content: '';
     position: absolute;
     top: 48px;
-    left: 300px;
+    left: 435px;
     width: 18px;
     height: 18px;
     background: url(../assets/images/valid.png);
